@@ -1,5 +1,3 @@
-# PassionProjects
-This is where I will be showcasing and sharing any self made and native bult tooling ,apps and resources that might not be directly associated with cyber security .
 # 🎿 DarkTube CLI Downloader
 This easy to use and run cli app scrapes and downloads audio, video and optionally thumbnails of youtube videos from any video link at the best and highest possible quality.You can insert and download multiple links at a time as well as select the audio format and optionally change file name upon finishing the download.You can then directly access your downloads folder from the cli to view your downloads.
 
