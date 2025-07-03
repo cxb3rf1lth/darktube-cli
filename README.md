@@ -28,16 +28,9 @@ ________                __   ___________   ___.
 ---
 
 ## 🖼️ Screenshot
-
-> CLI preview (Rich-enhanced):
-
-```
-🎿 DarkTube - Midnight CLI Downloader
---------------------------------------
-[1] 📅 Start Download
-[2] 🗆 View Download Folder
-[3] ❌ Quit
-```
+![2025-07-03_22-13](https://github.com/user-attachments/assets/39f3240b-c4fa-4001-bff0-518d2ffc3505)
+![2025-07-03_22-14_1](https://github.com/user-attachments/assets/ee3ac68d-8c5a-4366-8436-135690a0716a)
+![2025-07-03_22-14_2](https://github.com/user-attachments/assets/eb465f3e-5e81-4be4-bbb1-2a02fce4ab82)
 
 ---
 
