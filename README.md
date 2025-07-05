@@ -1,16 +1,16 @@
 # 🎿 DarkTube CLI Downloader
-This easy to use and run cli app scrapes and downloads audio, video and optionally thumbnails of youtube videos from any video link at the best and highest possible quality.You can insert and download multiple links at a time as well as select the audio format and optionally change file name upon finishing the download.You can then directly access your downloads folder from the cli to view your downloads.
+This easy to use and run CLI app scrapes and downloads audio, video, and optionally thumbnails of YouTube videos from any video link at the best and highest possible quality. You can insert and download multiple links at a time as well as select the audio format and optionally change file name upon finishing the download. You can then directly access your downloads folder from the CLI to view your downloads.
 
 ```
 ________                __   ___________   ___.           
 \______ \ _____ _______|  | _\__    ___/_ _\_ |__   ____  
- |    |  \\__  \\_  __ \  |/ / |    | |  |  \ __ \_/ __ \
- |    `   \/ __ \|  | \/    <  |    | |  |  / \_\ \  ___/
+ |    |  \\__  \\_  __ \  |/ / |    | |  |  \ __ \_/ __ \ 
+ |    `   \/ __ \|  | \/    <  |    | |  |  / \_\ \  ___/ 
 /_______  (____  /__|  |__|_ \ |____| |____/|___  /\___  >
-        \/     \/           \/                  \/     \/
+        \/     \/           \/                  \/     \/ 
 ```
 
-> A modern, intuitive, and high-quality **YouTube downloader** with zero GUI and maximum control.
+> A modern, intuitive, and high-quality **YouTube downloader** with zero GUI and maximum control.  
 > ⚡ Built with `yt-dlp`, `rich`, `questionary`, and advanced CLI enhancements.
 
 ---
@@ -23,7 +23,7 @@ ________                __   ___________   ___.
 * 🗅️ Open download folder directly
 * 🧱 Full CLI navigation with menu and feedback
 * 🎨 Stylish and user-friendly interface via `rich`
-* ♻️ Cross-platform support (Linux, macOS, Windows)
+* ♻️ Cross-platform support (Linux, macOS, Windows, Termux)
 
 ---
 
@@ -41,7 +41,7 @@ ________                __   ___________   ___.
 * Python 3.8+
 * ffmpeg installed and in PATH
 
-### 🛠️ Setup Script
+### 🛠️ Setup Script (Linux/macOS/WSL)
 
 ```bash
 # Clone the repo
@@ -50,6 +50,20 @@ cd darktube-cli
 
 # Run setup
 bash setup.sh
+```
+
+### 🛠️ Setup Script (Termux)
+
+```bash
+# Clone the repo
+git clone https://github.com/cxb3rf1lth/darktube-cli.git
+cd darktube-cli
+
+# Give storage permission (if not done already)
+termux-setup-storage
+
+# Run Termux setup
+bash setup_termux.sh
 ```
 
 ---
@@ -75,22 +89,23 @@ python darktube.pyz
 All files are saved in:
 
 ```
-~/Downloads/DarkTube/
+~/Downloads/DarkTube/  # For Linux/macOS/WSL
+~/storage/downloads/DarkTube/  # For Termux
 ```
 
 ---
 
 ## 📜 Disclaimer
 
-This tool is intended **strictly for personal and educational use only**.
-You are solely responsible for how you use it.
+This tool is intended **strictly for personal and educational use only**.  
+You are solely responsible for how you use it.  
 ⚠️ Do not download copyrighted content without permission.
 
 ---
 
 ## 👤 Author
 
-**ZedSec/cxb3rf1lth**
+**ZedSec/cxb3rf1lth**  
 🔗 GitHub: [github.com/cxb3rf1lth/zedseclabs/zxtxzec](https://github.com/cxb3rf1lth)
 
 ---
@@ -104,3 +119,4 @@ MIT License – Free to use, modify, and share with credit.
 ## ❤️ Support
 
 If this helped you, consider giving the repo a ⭐ on GitHub!
+
