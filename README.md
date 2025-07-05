@@ -1,5 +1,5 @@
 # 🎿 DarkTube CLI Downloader
-This easy to use and run CLI app scrapes and downloads audio, video, and optionally thumbnails of YouTube videos from any video link at the best and highest possible quality. You can insert and download multiple links at a time as well as select the audio format and optionally change file name upon finishing the download. You can then directly access your downloads folder from the CLI to view your downloads.
+This easy to use and run CLI app scrapes and downloads audio, video and optionally thumbnails of YouTube videos from any video link at the best and highest possible quality. You can insert and download multiple links at a time as well as select the audio format and optionally change file name upon finishing the download. You can then directly access your downloads folder from the CLI to view your downloads.
 
 ```
 ________                __   ___________   ___.           
@@ -7,10 +7,10 @@ ________                __   ___________   ___.
  |    |  \\__  \\_  __ \  |/ / |    | |  |  \ __ \_/ __ \ 
  |    `   \/ __ \|  | \/    <  |    | |  |  / \_\ \  ___/ 
 /_______  (____  /__|  |__|_ \ |____| |____/|___  /\___  >
-        \/     \/           \/                  \/     \/ 
+        \/     \/           \/                  \/     \/
 ```
 
-> A modern, intuitive, and high-quality **YouTube downloader** with zero GUI and maximum control.  
+> A modern, intuitive, and high-quality **YouTube downloader** with zero GUI and maximum control.
 > ⚡ Built with `yt-dlp`, `rich`, `questionary`, and advanced CLI enhancements.
 
 ---
@@ -41,7 +41,7 @@ ________                __   ___________   ___.
 * Python 3.8+
 * ffmpeg installed and in PATH
 
-### 🛠️ Setup Script (Linux/macOS/WSL)
+### 🛠️ Setup Script (Linux/macOS/Windows)
 
 ```bash
 # Clone the repo
@@ -52,18 +52,25 @@ cd darktube-cli
 bash setup.sh
 ```
 
-### 🛠️ Setup Script (Termux)
+---
+
+### 📱 Termux Setup Instructions
 
 ```bash
+# Update Termux and install dependencies
+pkg update -y && pkg upgrade -y
+pkg install -y python ffmpeg git curl
+
 # Clone the repo
 git clone https://github.com/cxb3rf1lth/darktube-cli.git
 cd darktube-cli
 
-# Give storage permission (if not done already)
-termux-setup-storage
+# Install Python dependencies
+pip install --upgrade pip
+pip install yt-dlp rich questionary
 
-# Run Termux setup
-bash setup_termux.sh
+# Run the tool with error handling
+python darktube.py || echo "[!] An error occurred. Check dependencies and permissions."
 ```
 
 ---
@@ -89,16 +96,15 @@ python darktube.pyz
 All files are saved in:
 
 ```
-~/Downloads/DarkTube/  # For Linux/macOS/WSL
-~/storage/downloads/DarkTube/  # For Termux
+~/Downloads/DarkTube/  # or /data/data/com.termux/files/home/Downloads/DarkTube/ on Termux
 ```
 
 ---
 
 ## 📜 Disclaimer
 
-This tool is intended **strictly for personal and educational use only**.  
-You are solely responsible for how you use it.  
+This tool is intended **strictly for personal and educational use only**.
+You are solely responsible for how you use it.
 ⚠️ Do not download copyrighted content without permission.
 
 ---
